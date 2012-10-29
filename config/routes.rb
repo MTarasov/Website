@@ -1,4 +1,19 @@
 Website::Application.routes.draw do
+
+  match "/" => "website#index"
+
+  match "/index" => "website#index"
+
+  match "/about" => "website#about"
+
+  match "/help" => "website#help"
+
+  get "website/index"
+
+  get "website/about"
+
+  get "website/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
